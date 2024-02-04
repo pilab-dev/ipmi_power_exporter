@@ -1,0 +1,24 @@
+# Configuration for IPMI exporter
+# ipmi:
+#   # The IPMI host to connect to
+#   host: "192.168.1.100"
+#   # The username for IPMI authentication
+#   user: "admin"
+#   # The password for IPMI authentication
+#   pass: "secret"
+
+# Configuration for logging
+log:
+  # The log level (debug, info, warn, error)
+  level: "info"
+  # The log format (json, pretty)
+  format: "pretty"
+
+# metrics exporter port
+server:
+  address: "127.0.0.1"
+  port: 9897
+
+# Interval between calling IPMI for new data
+collect:
+  interval: 10s
