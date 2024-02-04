@@ -1,5 +1,5 @@
 [Unit]
-Description=IPMI Exporter for Prometheus
+Description=IPMI power consumption exporter for Prometheus
 Wants=network-online.target
 After=network-online.target
 
@@ -7,7 +7,7 @@ After=network-online.target
 User=root
 Group=root
 Type=simple
-ExecStart=/path/to/ipmi_exporter
+ExecStart=/usr/bin/ipmi_power_exporter
 Restart=on-failure
 
 [Install]
